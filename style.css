@@ -1,0 +1,96 @@
+:root {
+    --primary: #6209db;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    min-height: 90px;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.navbar .btn {
+    padding:.625rem 1.25rem !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    padding: 1rem;
+}
+.btn-primary:hover {
+    background-color: blue;
+    /* border: none; */
+}
+
+.btn-light {
+    background-color: var(--light);
+    color:white;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.content {
+    max-width: 500px;
+}
+
+section {
+    height: 900px;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.step::after {
+    content: '';
+    border-right: 3px solid black;
+    height: 60px;
+    position: absolute;
+    top: 34px;    
+    opacity: .2;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        position: relative !important;
+    }
+    section {
+        height: unset;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+    .btn-secondary {
+        margin-bottom: 3px !important;
+    }
+}
+
+.navbar-toggle:focus{
+    box-shadow: none;
+}
+
+.redondear {
+    border-radius: 50px;
+}
+
+.cta-form {
+    max-width: 480px;
+}
+
+.cta-form .form-control {
+    min-height: 82px;
+}
+
+.cta-form .btn {
+    top: 12px;
+    right: 12px;
+}
